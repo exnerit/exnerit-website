@@ -1,0 +1,53 @@
+---
+import '../styles/global.css'
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "EXNERIT – Ihr IT-Partner für moderne Managed Services, Cloud-Lösungen und IT-Sicherheit." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="googlebot" content="noindex, nofollow, noarchive" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    
+    <link rel="preconnect" href="/" />
+    <style is:inline>
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Inter Regular'), local('Inter-Regular'), url('/fonts/inter-regular.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: local('Inter SemiBold'), local('Inter-SemiBold'), url('/fonts/inter-semibold.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local('Inter Bold'), local('Inter-Bold'), url('/fonts/inter-bold.woff2') format('woff2');
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-white antialiased">
+    <slot />
+  </body>
+</html>

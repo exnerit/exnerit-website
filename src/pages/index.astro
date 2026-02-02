@@ -1,0 +1,271 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="EXNERIT – Managed IT Services & Cloud Solutions">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-slate-950/80 border-b border-slate-800/50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="text-xl font-bold tracking-tight">
+        <span class="text-white">EXN</span><span class="text-emerald-400">ERIT</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#services" class="text-slate-300 hover:text-white transition-colors">Services</a>
+        <a href="#about" class="text-slate-300 hover:text-white transition-colors">Über uns</a>
+        <a href="#contact" class="text-slate-300 hover:text-white transition-colors">Kontakt</a>
+      </div>
+      <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
+        Beratung anfragen
+      </a>
+      <button class="md:hidden text-white p-2" aria-label="Menü öffnen">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-900/20 via-transparent to-transparent"></div>
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+      
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+        <div class="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 rounded-full px-4 py-1.5 text-sm text-slate-300 mb-8">
+          <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+          Managed Service Provider
+        </div>
+        
+        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6">
+          <span class="text-white">IT, die</span>
+          <span class="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"> einfach funktioniert</span>
+        </h1>
+        
+        <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10">
+          Wir übernehmen Ihre IT-Infrastruktur, damit Sie sich auf Ihr Kerngeschäft konzentrieren können. 
+          Proaktiv, sicher und skalierbar.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-8 py-4 rounded-xl text-lg transition-all hover:scale-105">
+            Kostenlose Beratung
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold px-8 py-4 rounded-xl text-lg transition-colors border border-slate-700">
+            Unsere Services
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-900/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Managed Services</h2>
+          <p class="text-slate-400 max-w-2xl mx-auto">
+            Alles aus einer Hand – von der Beratung über die Implementierung bis zum laufenden Betrieb.
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Service Card 1 -->
+          <div class="group bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 hover:border-emerald-500/50 transition-all hover:-translate-y-1">
+            <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-emerald-500/20 transition-colors">
+              <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-2">Cloud Solutions</h3>
+            <p class="text-slate-400">Microsoft 365, Azure, AWS – wir planen, migrieren und betreiben Ihre Cloud-Infrastruktur.</p>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="group bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 hover:border-emerald-500/50 transition-all hover:-translate-y-1">
+            <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-emerald-500/20 transition-colors">
+              <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-2">IT-Security</h3>
+            <p class="text-slate-400">Endpoint Protection, Firewalls, Backup & Disaster Recovery – Schutz auf allen Ebenen.</p>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="group bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 hover:border-emerald-500/50 transition-all hover:-translate-y-1">
+            <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-emerald-500/20 transition-colors">
+              <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-2">Helpdesk & Support</h3>
+            <p class="text-slate-400">24/7 erreichbar. Schnelle Reaktionszeiten. Persönlicher Ansprechpartner für Ihr Team.</p>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="group bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 hover:border-emerald-500/50 transition-all hover:-translate-y-1">
+            <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-emerald-500/20 transition-colors">
+              <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-2">Netzwerk & Infrastruktur</h3>
+            <p class="text-slate-400">LAN, WLAN, VPN, Server – moderne Infrastruktur für hybrides Arbeiten.</p>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div class="group bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 hover:border-emerald-500/50 transition-all hover:-translate-y-1">
+            <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-emerald-500/20 transition-colors">
+              <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-2">Monitoring & Reporting</h3>
+            <p class="text-slate-400">Proaktive Überwachung aller Systeme. Monatliche Reports. Transparente Kommunikation.</p>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div class="group bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 hover:border-emerald-500/50 transition-all hover:-translate-y-1">
+            <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-emerald-500/20 transition-colors">
+              <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-2">Automatisierung</h3>
+            <p class="text-slate-400">Workflows automatisieren, Prozesse optimieren, Zeit sparen – mit modernen Tools.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+              IT-Partner auf Augenhöhe
+            </h2>
+            <p class="text-slate-400 mb-6">
+              EXNERIT ist Ihr lokaler Managed Service Provider. Wir verstehen die Herausforderungen 
+              mittelständischer Unternehmen und liefern IT-Lösungen, die wirklich funktionieren.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-emerald-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-slate-300">Persönliche Betreuung statt anonymer Hotline</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-emerald-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-slate-300">Transparente Preise – keine versteckten Kosten</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-emerald-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-slate-300">Proaktiver Ansatz – Probleme lösen, bevor sie entstehen</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-emerald-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-slate-300">Zertifizierte Expertise in Microsoft, Cisco, VMware & mehr</span>
+              </li>
+            </ul>
+          </div>
+          <div class="relative">
+            <div class="aspect-square bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl border border-slate-700/50 flex items-center justify-center">
+              <div class="text-center p-8">
+                <div class="text-6xl font-bold text-emerald-400 mb-2">10+</div>
+                <div class="text-slate-400">Jahre Erfahrung</div>
+              </div>
+            </div>
+            <div class="absolute -bottom-6 -left-6 bg-slate-800 border border-slate-700/50 rounded-2xl p-4 shadow-xl">
+              <div class="text-2xl font-bold text-white">99.9%</div>
+              <div class="text-sm text-slate-400">Verfügbarkeit</div>
+            </div>
+            <div class="absolute -top-6 -right-6 bg-slate-800 border border-slate-700/50 rounded-2xl p-4 shadow-xl">
+              <div class="text-2xl font-bold text-white">&lt;15 min</div>
+              <div class="text-sm text-slate-400">Reaktionszeit</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-900/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+            Bereit für IT, die funktioniert?
+          </h2>
+          <p class="text-slate-400 mb-8">
+            Lassen Sie uns unverbindlich über Ihre Anforderungen sprechen. 
+            Wir melden uns innerhalb von 24 Stunden bei Ihnen.
+          </p>
+          
+          <form class="space-y-4 text-left">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="name" class="block text-sm font-medium text-slate-300 mb-2">Name</label>
+                <input type="text" id="name" name="name" required
+                  class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
+                  placeholder="Max Mustermann">
+              </div>
+              <div>
+                <label for="company" class="block text-sm font-medium text-slate-300 mb-2">Unternehmen</label>
+                <input type="text" id="company" name="company"
+                  class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
+                  placeholder="Firma GmbH">
+              </div>
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-slate-300 mb-2">E-Mail</label>
+              <input type="email" id="email" name="email" required
+                class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
+                placeholder="max@firma.de">
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-slate-300 mb-2">Nachricht</label>
+              <textarea id="message" name="message" rows="4" required
+                class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all resize-none"
+                placeholder="Erzählen Sie uns von Ihren IT-Anforderungen..."></textarea>
+            </div>
+            <button type="submit" 
+              class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-8 py-4 rounded-xl text-lg transition-all hover:scale-[1.02]">
+              Nachricht senden
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/50 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <a href="/" class="text-xl font-bold tracking-tight">
+          <span class="text-white">EXN</span><span class="text-emerald-400">ERIT</span>
+        </a>
+        <div class="flex items-center gap-6 text-sm text-slate-400">
+          <a href="#" class="hover:text-white transition-colors">Impressum</a>
+          <a href="#" class="hover:text-white transition-colors">Datenschutz</a>
+        </div>
+        <p class="text-sm text-slate-500">
+          © 2026 EXNERIT. Alle Rechte vorbehalten.
+        </p>
+      </div>
+    </div>
+  </footer>
+</Layout>
