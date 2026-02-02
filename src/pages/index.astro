@@ -2,25 +2,25 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="EXNER IT-Systemlösungen – Managed IT Services">
+<Layout title="exnerit – IT-Management neu gedacht">
   <!-- Header -->
-  <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-white/90 border-b border-gray-100">
+  <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#241E1D]/90 border-b border-white/5">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="/" class="flex items-center">
-        <!-- Logo Placeholder - replace src with actual logo -->
-        <img src="/logo.svg" alt="EXNER IT" class="h-8 md:h-9 w-auto" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-        <span class="hidden text-xl font-bold tracking-tight text-[#1B1514]">EXNER IT</span>
+      <a href="/" class="flex items-center gap-2">
+        <img src="/logo.svg" alt="exnerit" class="h-8 md:h-9 w-auto" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <span class="hidden items-center text-xl font-bold tracking-tight">
+          <span class="text-white">exner</span><span class="text-[#fcac00]">it</span>
+        </span>
       </a>
       <div class="hidden md:flex items-center gap-8 text-sm">
-        <a href="#services" class="text-[#1B1514]/70 hover:text-[#1B1514] transition-colors">Services</a>
-        <a href="#prozess" class="text-[#1B1514]/70 hover:text-[#1B1514] transition-colors">So arbeiten wir</a>
-        <a href="#warum-wir" class="text-[#1B1514]/70 hover:text-[#1B1514] transition-colors">Warum wir</a>
-        <a href="#kontakt" class="text-[#1B1514]/70 hover:text-[#1B1514] transition-colors">Kontakt</a>
+        <a href="/services" class="text-[#E5E7EB] hover:text-white transition-colors">Services</a>
+        <a href="/infrastruktur" class="text-[#E5E7EB] hover:text-white transition-colors">Infrastruktur</a>
+        <a href="/philosophie" class="text-[#E5E7EB] hover:text-white transition-colors">Philosophie</a>
       </div>
-      <a href="#kontakt" class="hidden sm:inline-flex items-center gap-2 bg-[#fcac00] hover:bg-[#fcac00]/90 text-[#1B1514] font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
-        Kontakt aufnehmen
+      <a href="#kontakt" class="hidden sm:inline-flex items-center gap-2 bg-[#fcac00] hover:bg-[#fcac00]/90 text-[#241E1D] font-semibold px-5 py-2.5 rounded-lg text-sm transition-all glow-accent-hover">
+        Strategiegespräch vereinbaren
       </a>
-      <button class="md:hidden text-[#1B1514] p-2" aria-label="Menü öffnen">
+      <button class="md:hidden text-white p-2" aria-label="Menü öffnen">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
@@ -30,269 +30,214 @@ import Layout from '../layouts/Layout.astro';
 
   <main>
     <!-- Hero Section -->
-    <section class="relative min-h-[80vh] flex items-center justify-center pt-16 bg-gradient-to-b from-gray-50 to-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-        <p class="text-[#fcac00] font-medium mb-4">IT-Systemlösungen für den Mittelstand</p>
+    <section class="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-[#241E1D] via-[#1a1615] to-[#241E1D]"></div>
+      <div class="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-[#fcac00]/5 rounded-full blur-[120px]"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-[#fcac00]/3 rounded-full blur-[100px]"></div>
+      
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+        <p class="text-[#fcac00] font-medium tracking-wide uppercase text-sm mb-6">Silent IT – Proaktiv. Sicher. Lautlos.</p>
         
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-[#1B1514]">
-          IT-Betrieb, der Sie entlastet
+        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-8 text-white leading-tight">
+          IT-Management<br class="hidden sm:block" /> neu gedacht
         </h1>
         
-        <p class="text-lg sm:text-xl text-[#1B1514]/70 max-w-2xl mx-auto mb-10">
-          Wir übernehmen Planung, Betrieb und Support Ihrer IT-Infrastruktur – 
-          strukturiert, dokumentiert und mit klaren Zuständigkeiten.
+        <p class="text-lg sm:text-xl text-[#E5E7EB] max-w-3xl mx-auto mb-12 leading-relaxed">
+          Wir sind der digitale Maschinenraum für den Mittelstand. Während andere auf Störungen reagieren, 
+          haben wir sie bereits gelöst. Erleben Sie IT-Infrastruktur auf Enterprise-Niveau – 
+          inhabergeführt und kompromisslos stabil.
         </p>
         
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#kontakt" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#fcac00] hover:bg-[#fcac00]/90 text-[#1B1514] font-semibold px-8 py-4 rounded-xl text-lg transition-all">
-            Unverbindlich anfragen
+          <a href="#kontakt" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#fcac00] hover:bg-[#fcac00]/90 text-[#241E1D] font-semibold px-8 py-4 rounded-xl text-lg transition-all glow-accent-hover">
+            Strategiegespräch vereinbaren
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
             </svg>
           </a>
-          <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-[#1B1514] font-semibold px-8 py-4 rounded-xl text-lg transition-colors border border-gray-200">
-            Leistungen ansehen
+          <a href="/services" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-xl text-lg transition-colors border border-white/10">
+            Unsere Services
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-24 bg-white">
+    <!-- USP Section -->
+    <section class="py-24 bg-[#241E1D] border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-3xl sm:text-4xl font-bold text-[#1B1514] mb-4">Unsere Leistungen</h2>
-          <p class="text-[#1B1514]/70 max-w-2xl mx-auto">
-            Von der Beratung über die Umsetzung bis zum laufenden Betrieb – alles aus einer Hand.
-          </p>
-        </div>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Service Card 1 -->
-          <div class="group bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:border-[#fcac00]/50 hover:shadow-lg transition-all">
-            <div class="w-12 h-12 bg-[#fcac00]/10 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-6 h-6 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-[#1B1514] mb-2">Managed Services</h3>
-            <p class="text-[#1B1514]/70">Proaktive Betreuung Ihrer IT-Systeme. Monitoring, Wartung und Support innerhalb unserer Servicezeiten.</p>
-          </div>
-
-          <!-- Service Card 2 -->
-          <div class="group bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:border-[#fcac00]/50 hover:shadow-lg transition-all">
-            <div class="w-12 h-12 bg-[#fcac00]/10 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-6 h-6 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-[#1B1514] mb-2">IT-Security</h3>
-            <p class="text-[#1B1514]/70">Firewall-Management, Endpoint Protection, Schwachstellenanalyse – Sicherheit als Grundlage.</p>
-          </div>
-
-          <!-- Service Card 3 -->
-          <div class="group bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:border-[#fcac00]/50 hover:shadow-lg transition-all">
-            <div class="w-12 h-12 bg-[#fcac00]/10 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-6 h-6 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-[#1B1514] mb-2">Backup & Recovery</h3>
-            <p class="text-[#1B1514]/70">Datensicherung mit klaren Wiederherstellungszeiten. Regelmäßige Tests der Backup-Integrität.</p>
-          </div>
-
-          <!-- Service Card 4 -->
-          <div class="group bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:border-[#fcac00]/50 hover:shadow-lg transition-all">
-            <div class="w-12 h-12 bg-[#fcac00]/10 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-6 h-6 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-[#1B1514] mb-2">Microsoft 365</h3>
-            <p class="text-[#1B1514]/70">Einrichtung, Migration und Administration. Exchange, Teams, SharePoint – sicher konfiguriert.</p>
-          </div>
-
-          <!-- Service Card 5 -->
-          <div class="group bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:border-[#fcac00]/50 hover:shadow-lg transition-all">
-            <div class="w-12 h-12 bg-[#fcac00]/10 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-6 h-6 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-[#1B1514] mb-2">Netzwerk & Server</h3>
-            <p class="text-[#1B1514]/70">LAN, WLAN, VPN und Serverinfrastruktur – geplant, dokumentiert und zuverlässig betrieben.</p>
-          </div>
-
-          <!-- Service Card 6 -->
-          <div class="group bg-gray-50 border border-gray-100 rounded-2xl p-6 hover:border-[#fcac00]/50 hover:shadow-lg transition-all">
-            <div class="w-12 h-12 bg-[#fcac00]/10 rounded-xl flex items-center justify-center mb-4">
-              <svg class="w-6 h-6 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold text-[#1B1514] mb-2">Support</h3>
-            <p class="text-[#1B1514]/70">Persönlicher Ansprechpartner, Ticketsystem, schnelle Reaktion innerhalb der Servicezeiten. Notfallregelung nach Vereinbarung.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Process Section -->
-    <section id="prozess" class="py-24 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl sm:text-4xl font-bold text-[#1B1514] mb-4">So arbeiten wir</h2>
-          <p class="text-[#1B1514]/70 max-w-2xl mx-auto">
-            Ein strukturierter Prozess für nachhaltige IT-Stabilität.
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Warum exnerit?</h2>
+          <p class="text-[#E5E7EB] max-w-2xl mx-auto">
+            Drei Säulen, die uns von klassischen Systemhäusern unterscheiden.
           </p>
         </div>
         
         <div class="grid md:grid-cols-3 gap-8">
-          <div class="text-center">
-            <div class="w-16 h-16 bg-[#fcac00] rounded-full flex items-center justify-center mx-auto mb-6">
-              <span class="text-2xl font-bold text-[#1B1514]">1</span>
+          <!-- USP 1 -->
+          <div class="group relative bg-white/5 border-t-2 border-[#fcac00] rounded-2xl p-8 hover:bg-white/10 transition-all">
+            <div class="w-14 h-14 bg-[#fcac00]/10 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+              </svg>
             </div>
-            <h3 class="text-xl font-semibold text-[#1B1514] mb-3">Analyse</h3>
-            <p class="text-[#1B1514]/70">
-              Bestandsaufnahme Ihrer IT-Landschaft. Dokumentation des Ist-Zustands, Identifikation von Schwachstellen und Optimierungspotenzial.
-            </p>
+            <h3 class="text-xl font-semibold text-white mb-3">Automatisiertes Monitoring</h3>
+            <p class="text-[#E5E7EB]">24/7 Überwachung durch unsere RMM-Systeme auf NinjaOne-Basis. Probleme werden erkannt, bevor Sie sie bemerken.</p>
           </div>
-          
-          <div class="text-center">
-            <div class="w-16 h-16 bg-[#fcac00] rounded-full flex items-center justify-center mx-auto mb-6">
-              <span class="text-2xl font-bold text-[#1B1514]">2</span>
+
+          <!-- USP 2 -->
+          <div class="group relative bg-white/5 border-t-2 border-[#fcac00] rounded-2xl p-8 hover:bg-white/10 transition-all">
+            <div class="w-14 h-14 bg-[#fcac00]/10 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+              </svg>
             </div>
-            <h3 class="text-xl font-semibold text-[#1B1514] mb-3">Stabilisierung</h3>
-            <p class="text-[#1B1514]/70">
-              Behebung kritischer Probleme, Einrichtung von Monitoring und Backup, Standardisierung der Systeme.
-            </p>
+            <h3 class="text-xl font-semibold text-white mb-3">Prozess-Exzellenz</h3>
+            <p class="text-[#E5E7EB]">Maximale Transparenz und Geschwindigkeit durch Odoo-gesteuerte Workflows. Jeder Vorgang dokumentiert, jede Änderung nachvollziehbar.</p>
           </div>
-          
-          <div class="text-center">
-            <div class="w-16 h-16 bg-[#fcac00] rounded-full flex items-center justify-center mx-auto mb-6">
-              <span class="text-2xl font-bold text-[#1B1514]">3</span>
+
+          <!-- USP 3 -->
+          <div class="group relative bg-white/5 border-t-2 border-[#fcac00] rounded-2xl p-8 hover:bg-white/10 transition-all">
+            <div class="w-14 h-14 bg-[#fcac00]/10 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
             </div>
-            <h3 class="text-xl font-semibold text-[#1B1514] mb-3">Betrieb</h3>
-            <p class="text-[#1B1514]/70">
-              Laufende Betreuung mit proaktivem Monitoring, regelmäßiger Wartung und kontinuierlicher Dokumentation.
-            </p>
+            <h3 class="text-xl font-semibold text-white mb-3">Regionale Stärke</h3>
+            <p class="text-[#E5E7EB]">High-End IT aus Groß Mohrdorf für die Region und darüber hinaus. Persönlicher Kontakt, kurze Wege, echte Verantwortung.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Why Us Section -->
-    <section id="warum-wir" class="py-24 bg-white">
+    <!-- Services Preview -->
+    <section class="py-24 bg-[#1a1615] border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 class="text-3xl sm:text-4xl font-bold text-[#1B1514] mb-6">
-              Warum EXNER IT?
-            </h2>
-            <p class="text-[#1B1514]/70 mb-8">
-              Wir sind kein anonymer Großanbieter. Bei uns haben Sie einen festen Ansprechpartner, 
-              der Ihre Systeme kennt und Verantwortung übernimmt.
-            </p>
-            <ul class="space-y-5">
-              <li class="flex items-start gap-4">
-                <div class="w-8 h-8 bg-[#fcac00]/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg class="w-5 h-5 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-[#1B1514]">Proaktiv statt reaktiv</h4>
-                  <p class="text-[#1B1514]/70 text-sm">Wir erkennen Probleme, bevor sie den Betrieb stören.</p>
-                </div>
-              </li>
-              <li class="flex items-start gap-4">
-                <div class="w-8 h-8 bg-[#fcac00]/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg class="w-5 h-5 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-[#1B1514]">Dokumentation als Standard</h4>
-                  <p class="text-[#1B1514]/70 text-sm">Jede Änderung wird erfasst. Sie behalten die Übersicht.</p>
-                </div>
-              </li>
-              <li class="flex items-start gap-4">
-                <div class="w-8 h-8 bg-[#fcac00]/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg class="w-5 h-5 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-[#1B1514]">Klare Zuständigkeiten</h4>
-                  <p class="text-[#1B1514]/70 text-sm">Fester Ansprechpartner, definierte Prozesse, transparente Kommunikation.</p>
-                </div>
-              </li>
-              <li class="flex items-start gap-4">
-                <div class="w-8 h-8 bg-[#fcac00]/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg class="w-5 h-5 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-[#1B1514]">Standardisierung</h4>
-                  <p class="text-[#1B1514]/70 text-sm">Einheitliche, bewährte Lösungen statt Wildwuchs.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="relative">
-            <div class="bg-gray-50 rounded-3xl border border-gray-100 p-8 lg:p-12">
-              <blockquote class="text-lg text-[#1B1514]/80 italic mb-6">
-                „IT soll funktionieren – ohne ständige Überraschungen. Dafür sorgen wir."
-              </blockquote>
-              <p class="text-[#1B1514] font-semibold">EXNER IT-Systemlösungen</p>
+        <div class="text-center mb-16">
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Managed Services</h2>
+          <p class="text-[#E5E7EB] max-w-2xl mx-auto">
+            Enterprise-Lösungen für den Mittelstand – von Security bis Collaboration.
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Service 1 -->
+          <div class="group bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-[#fcac00]/30 transition-all">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-[#fcac00]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">Managed Security</h3>
+                <p class="text-[#E5E7EB] text-sm mb-3">Schutzschild 2.0 – Next-Gen Firewalls (Sophos), Endpoint Protection (SentinelOne) und Zero-Trust-Konzepte.</p>
+                <span class="text-[#fcac00] text-sm font-medium">Sophos · SentinelOne · Zero Trust</span>
+              </div>
             </div>
           </div>
+
+          <!-- Service 2 -->
+          <div class="group bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-[#fcac00]/30 transition-all">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-[#fcac00]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">Business Continuity</h3>
+                <p class="text-[#E5E7EB] text-sm mb-3">Veeam Cloud Connect & Disaster Recovery – Backup-Konzepte, die garantieren, dass der Betrieb weitergeht.</p>
+                <span class="text-[#fcac00] text-sm font-medium">Veeam · DR · Cloud Backup</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="group bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-[#fcac00]/30 transition-all">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-[#fcac00]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">Modern Workplace</h3>
+                <p class="text-[#E5E7EB] text-sm mb-3">Collaboration & Identität – Microsoft 365 & Google Workspace, abgesichert durch zentrales Identitätsmanagement.</p>
+                <span class="text-[#fcac00] text-sm font-medium">Microsoft 365 · Entra ID · Teams</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="group bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-[#fcac00]/30 transition-all">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-[#fcac00]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">Managed Print</h3>
+                <p class="text-[#E5E7EB] text-sm mb-3">Effizienz auf Papier – Strategische Partnerschaft mit Toshiba für moderne MFP- und A3-Drucklösungen.</p>
+                <span class="text-[#fcac00] text-sm font-medium">Toshiba · MFP · Kostenoptimierung</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="/services" class="inline-flex items-center gap-2 text-[#fcac00] font-medium hover:underline">
+            Alle Services entdecken
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="kontakt" class="py-24 bg-gray-50">
+    <section id="kontakt" class="py-24 bg-[#241E1D] border-t border-white/5">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-2xl mx-auto text-center">
-          <h2 class="text-3xl sm:text-4xl font-bold text-[#1B1514] mb-4">
-            Lassen Sie uns sprechen
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+            Strategiegespräch vereinbaren
           </h2>
-          <p class="text-[#1B1514]/70 mb-8">
-            Erzählen Sie uns von Ihrer IT-Situation. Wir melden uns zeitnah bei Ihnen.
+          <p class="text-[#E5E7EB] mb-8">
+            Lassen Sie uns über Ihre IT-Infrastruktur sprechen – unverbindlich und auf Augenhöhe.
           </p>
           
           <form class="space-y-4 text-left">
             <div class="grid sm:grid-cols-2 gap-4">
               <div>
-                <label for="name" class="block text-sm font-medium text-[#1B1514] mb-2">Name</label>
+                <label for="name" class="block text-sm font-medium text-[#E5E7EB] mb-2">Name</label>
                 <input type="text" id="name" name="name" required
-                  class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-[#1B1514] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#fcac00] focus:border-transparent transition-all"
+                  class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-[#fcac00] focus:border-transparent transition-all"
                   placeholder="Ihr Name">
               </div>
               <div>
-                <label for="company" class="block text-sm font-medium text-[#1B1514] mb-2">Unternehmen</label>
+                <label for="company" class="block text-sm font-medium text-[#E5E7EB] mb-2">Unternehmen</label>
                 <input type="text" id="company" name="company"
-                  class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-[#1B1514] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#fcac00] focus:border-transparent transition-all"
+                  class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-[#fcac00] focus:border-transparent transition-all"
                   placeholder="Firma">
               </div>
             </div>
             <div>
-              <label for="email" class="block text-sm font-medium text-[#1B1514] mb-2">E-Mail</label>
+              <label for="email" class="block text-sm font-medium text-[#E5E7EB] mb-2">E-Mail</label>
               <input type="email" id="email" name="email" required
-                class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-[#1B1514] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#fcac00] focus:border-transparent transition-all"
+                class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-[#fcac00] focus:border-transparent transition-all"
                 placeholder="ihre@email.de">
             </div>
             <div>
-              <label for="message" class="block text-sm font-medium text-[#1B1514] mb-2">Nachricht</label>
+              <label for="message" class="block text-sm font-medium text-[#E5E7EB] mb-2">Wie können wir helfen?</label>
               <textarea id="message" name="message" rows="4" required
-                class="w-full px-4 py-3 bg-white border border-gray-200 rounded-xl text-[#1B1514] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#fcac00] focus:border-transparent transition-all resize-none"
-                placeholder="Wie können wir Ihnen helfen?"></textarea>
+                class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-[#fcac00] focus:border-transparent transition-all resize-none"
+                placeholder="Erzählen Sie uns von Ihrer IT-Situation..."></textarea>
             </div>
             <button type="submit" 
-              class="w-full bg-[#fcac00] hover:bg-[#fcac00]/90 text-[#1B1514] font-semibold px-8 py-4 rounded-xl text-lg transition-all">
-              Nachricht senden
+              class="w-full bg-[#fcac00] hover:bg-[#fcac00]/90 text-[#241E1D] font-semibold px-8 py-4 rounded-xl text-lg transition-all glow-accent-hover">
+              Gespräch anfragen
             </button>
           </form>
         </div>
@@ -301,19 +246,38 @@ import Layout from '../layouts/Layout.astro';
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-gray-100 py-12 bg-white">
+  <footer class="border-t border-white/5 py-16 bg-[#1a1615]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <a href="/" class="flex items-center">
-          <img src="/logo.svg" alt="EXNER IT" class="h-8 w-auto" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-          <span class="hidden text-xl font-bold tracking-tight text-[#1B1514]">EXNER IT</span>
-        </a>
-        <div class="flex items-center gap-6 text-sm text-[#1B1514]/70">
-          <a href="/impressum" class="hover:text-[#1B1514] transition-colors">Impressum</a>
-          <a href="/datenschutz" class="hover:text-[#1B1514] transition-colors">Datenschutz</a>
+      <!-- Partner Logos -->
+      <div class="flex flex-wrap items-center justify-center gap-8 mb-12 opacity-50 hover:opacity-100 transition-opacity">
+        <span class="text-white/60 text-sm font-medium">Sophos</span>
+        <span class="text-white/60 text-sm font-medium">Veeam</span>
+        <span class="text-white/60 text-sm font-medium">Microsoft 365</span>
+        <span class="text-white/60 text-sm font-medium">Toshiba</span>
+        <span class="text-white/60 text-sm font-medium">NinjaOne</span>
+      </div>
+
+      <div class="border-t border-white/5 pt-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-2">
+            <span class="text-xl font-bold tracking-tight">
+              <span class="text-white">exner</span><span class="text-[#fcac00]">it</span>
+            </span>
+          </div>
+          
+          <div class="text-center md:text-left">
+            <p class="text-[#E5E7EB] text-sm">Andreas Exner</p>
+            <p class="text-white/50 text-sm">Kranichweg 12, 18445 Groß Mohrdorf</p>
+          </div>
+          
+          <div class="flex items-center gap-6 text-sm text-white/50">
+            <a href="/impressum" class="hover:text-white transition-colors">Impressum</a>
+            <a href="/datenschutz" class="hover:text-white transition-colors">Datenschutz</a>
+          </div>
         </div>
-        <p class="text-sm text-[#1B1514]/50">
-          © 2026 EXNER IT-Systemlösungen
+        
+        <p class="text-center text-sm text-white/30 mt-8">
+          © 2026 exnerit. Alle Rechte vorbehalten.
         </p>
       </div>
     </div>

@@ -1,0 +1,267 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Philosophie – exnerit">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#241E1D]/90 border-b border-white/5">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <span class="text-xl font-bold tracking-tight">
+          <span class="text-white">exner</span><span class="text-[#fcac00]">it</span>
+        </span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="/services" class="text-[#E5E7EB] hover:text-white transition-colors">Services</a>
+        <a href="/infrastruktur" class="text-[#E5E7EB] hover:text-white transition-colors">Infrastruktur</a>
+        <a href="/philosophie" class="text-[#fcac00] font-medium">Philosophie</a>
+      </div>
+      <a href="/#kontakt" class="hidden sm:inline-flex items-center gap-2 bg-[#fcac00] hover:bg-[#fcac00]/90 text-[#241E1D] font-semibold px-5 py-2.5 rounded-lg text-sm transition-all glow-accent-hover">
+        Strategiegespräch
+      </a>
+    </nav>
+  </header>
+
+  <main class="pt-16">
+    <!-- Hero -->
+    <section class="py-24 bg-[#241E1D]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-[#fcac00] font-medium tracking-wide uppercase text-sm mb-4">Philosophie</p>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+          Warum exnerit?
+        </h1>
+        <p class="text-lg text-[#E5E7EB] max-w-3xl mx-auto">
+          Wir skalieren nicht über Mitarbeiteranzahl, sondern über technische Präzision. 
+          Bei uns sprechen Sie direkt mit den Entscheidern. Keine Hotline-Warteschleifen, 
+          sondern direkte Expertise. Wir nennen das: <span class="text-[#fcac00] font-semibold">Boutique-IT</span>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Boutique Concept -->
+    <section class="py-24 bg-[#1a1615] border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+              Der Boutique-Vorteil
+            </h2>
+            <p class="text-[#E5E7EB] mb-6 text-lg">
+              Große Systemhäuser versprechen viel und liefern Standardlösungen. 
+              Wir machen es anders: Jede Infrastruktur wird individuell geplant, 
+              jeder Kunde persönlich betreut.
+            </p>
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-[#fcac00]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-lg">Direkte Kommunikation</h4>
+                  <p class="text-[#E5E7EB]">Kein First-Level-Support, keine Ticket-Mühlen. Sie sprechen direkt mit dem Techniker, der Ihr System kennt.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-[#fcac00]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-lg">Enterprise-Technologie</h4>
+                  <p class="text-[#E5E7EB]">Dieselben Tools und Methoden wie Konzerne – aber zugeschnitten auf Ihre Größe und Ihr Budget.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-[#fcac00]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-[#fcac00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-lg">Schnelle Entscheidungen</h4>
+                  <p class="text-[#E5E7EB]">Keine Gremien, keine Freigabeschleifen. Wenn etwas entschieden werden muss, passiert das sofort.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-3xl p-10">
+            <blockquote class="text-2xl text-white font-medium italic mb-6 leading-relaxed">
+              „Wir bauen IT-Infrastruktur, die funktioniert – nicht IT, die beschäftigt."
+            </blockquote>
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 bg-[#fcac00] rounded-full flex items-center justify-center">
+                <span class="text-xl font-bold text-[#241E1D]">AE</span>
+              </div>
+              <div>
+                <p class="text-white font-semibold">Andreas Exner</p>
+                <p class="text-[#E5E7EB] text-sm">Gründer & Inhaber</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Silent IT Concept -->
+    <section class="py-24 bg-[#241E1D] border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Das Silent IT Prinzip</h2>
+          <p class="text-[#E5E7EB] max-w-2xl mx-auto text-lg">
+            Die beste IT ist die, die man nicht bemerkt. Wir arbeiten proaktiv im Hintergrund, 
+            damit Sie sich auf Ihr Geschäft konzentrieren können.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white/5 border-t-2 border-[#fcac00] rounded-2xl p-6 text-center">
+            <div class="text-4xl font-bold text-[#fcac00] mb-2">24/7</div>
+            <div class="text-white font-medium mb-2">Monitoring</div>
+            <p class="text-[#E5E7EB] text-sm">Automatische Überwachung aller Systeme, auch nachts und am Wochenende.</p>
+          </div>
+          <div class="bg-white/5 border-t-2 border-[#fcac00] rounded-2xl p-6 text-center">
+            <div class="text-4xl font-bold text-[#fcac00] mb-2">90%</div>
+            <div class="text-white font-medium mb-2">Proaktiv gelöst</div>
+            <p class="text-[#E5E7EB] text-sm">Die meisten Probleme werden behoben, bevor Sie sie bemerken.</p>
+          </div>
+          <div class="bg-white/5 border-t-2 border-[#fcac00] rounded-2xl p-6 text-center">
+            <div class="text-4xl font-bold text-[#fcac00] mb-2">100%</div>
+            <div class="text-white font-medium mb-2">Dokumentiert</div>
+            <p class="text-[#E5E7EB] text-sm">Jede Änderung wird erfasst. Volle Transparenz, jederzeit.</p>
+          </div>
+          <div class="bg-white/5 border-t-2 border-[#fcac00] rounded-2xl p-6 text-center">
+            <div class="text-4xl font-bold text-[#fcac00] mb-2">1</div>
+            <div class="text-white font-medium mb-2">Ansprechpartner</div>
+            <p class="text-[#E5E7EB] text-sm">Ein fester Kontakt, der Ihre Systeme kennt und Verantwortung trägt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools & Partners -->
+    <section class="py-24 bg-[#1a1615] border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Unsere Werkzeuge</h2>
+          <p class="text-[#E5E7EB] max-w-2xl mx-auto">
+            Wir setzen auf bewährte Enterprise-Lösungen – keine Experimente auf Ihrem Rücken.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="text-[#fcac00] font-bold text-lg mb-4">RMM & Monitoring</div>
+            <p class="text-white font-medium">NinjaOne</p>
+            <p class="text-[#E5E7EB] text-sm mt-2">Remote Monitoring & Management für alle Endgeräte und Server.</p>
+          </div>
+          <div class="text-center">
+            <div class="text-[#fcac00] font-bold text-lg mb-4">Business Prozesse</div>
+            <p class="text-white font-medium">Odoo</p>
+            <p class="text-[#E5E7EB] text-sm mt-2">Integriertes ERP für Ticketing, Zeiterfassung und Kundenkommunikation.</p>
+          </div>
+          <div class="text-center">
+            <div class="text-[#fcac00] font-bold text-lg mb-4">Virtualisierung</div>
+            <p class="text-white font-medium">Proxmox VE</p>
+            <p class="text-[#E5E7EB] text-sm mt-2">Enterprise-Virtualisierung ohne Vendor Lock-in.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Andreas -->
+    <section class="py-24 bg-[#241E1D] border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="order-2 lg:order-1">
+            <div class="bg-white/5 border border-white/10 rounded-3xl p-10">
+              <div class="w-24 h-24 bg-[#fcac00] rounded-full flex items-center justify-center mb-6">
+                <span class="text-3xl font-bold text-[#241E1D]">AE</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-2">Andreas Exner</h3>
+              <p class="text-[#fcac00] font-medium mb-4">Gründer & Inhaber</p>
+              <p class="text-[#E5E7EB] mb-6">
+                IT-Systeme sind meine Leidenschaft seit über 15 Jahren. Von der ersten Serverinstallation 
+                bis zum komplexen Cluster-Setup – ich kenne die Herausforderungen des Mittelstands aus 
+                erster Hand.
+              </p>
+              <div class="space-y-2 text-sm">
+                <p class="text-[#E5E7EB]">📍 Groß Mohrdorf, Mecklenburg-Vorpommern</p>
+                <p class="text-[#E5E7EB]">🎯 Fokus: Virtualisierung, Security, Automation</p>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+              Inhabergeführt bedeutet Verantwortung
+            </h2>
+            <p class="text-[#E5E7EB] mb-6 text-lg">
+              Bei exnerit gibt es keine anonymen Strukturen. Ich stehe persönlich für die Qualität 
+              unserer Arbeit ein. Wenn etwas nicht funktioniert, ist das mein Problem – nicht Ihres.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#fcac00] mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-[#E5E7EB]">Direkte Erreichbarkeit – kein Call Center dazwischen</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#fcac00] mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-[#E5E7EB]">Langfristige Partnerschaften statt kurzfristiger Projekte</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#fcac00] mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-[#E5E7EB]">Ehrliche Beratung – auch wenn das bedeutet, abzuraten</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-[#1a1615] border-t border-white/5">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+          Klingt nach dem Partner, den Sie suchen?
+        </h2>
+        <p class="text-[#E5E7EB] mb-8">
+          Lassen Sie uns in einem unverbindlichen Gespräch herausfinden, ob wir zusammenpassen.
+        </p>
+        <a href="/#kontakt" class="inline-flex items-center gap-2 bg-[#fcac00] hover:bg-[#fcac00]/90 text-[#241E1D] font-semibold px-8 py-4 rounded-xl text-lg transition-all glow-accent-hover">
+          Strategiegespräch vereinbaren
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-12 bg-[#241E1D]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <span class="text-xl font-bold tracking-tight">
+          <span class="text-white">exner</span><span class="text-[#fcac00]">it</span>
+        </span>
+        <div class="text-center">
+          <p class="text-[#E5E7EB] text-sm">Andreas Exner</p>
+          <p class="text-white/50 text-sm">Kranichweg 12, 18445 Groß Mohrdorf</p>
+        </div>
+        <div class="flex items-center gap-6 text-sm text-white/50">
+          <a href="/impressum" class="hover:text-white transition-colors">Impressum</a>
+          <a href="/datenschutz" class="hover:text-white transition-colors">Datenschutz</a>
+        </div>
+      </div>
+      <p class="text-center text-sm text-white/30 mt-8">© 2026 exnerit. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+</Layout>

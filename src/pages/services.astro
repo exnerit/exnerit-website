@@ -1,0 +1,263 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Managed Services – exnerit">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#241E1D]/90 border-b border-white/5">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <span class="text-xl font-bold tracking-tight">
+          <span class="text-white">exner</span><span class="text-[#fcac00]">it</span>
+        </span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="/services" class="text-[#fcac00] font-medium">Services</a>
+        <a href="/infrastruktur" class="text-[#E5E7EB] hover:text-white transition-colors">Infrastruktur</a>
+        <a href="/philosophie" class="text-[#E5E7EB] hover:text-white transition-colors">Philosophie</a>
+      </div>
+      <a href="/#kontakt" class="hidden sm:inline-flex items-center gap-2 bg-[#fcac00] hover:bg-[#fcac00]/90 text-[#241E1D] font-semibold px-5 py-2.5 rounded-lg text-sm transition-all glow-accent-hover">
+        Strategiegespräch
+      </a>
+    </nav>
+  </header>
+
+  <main class="pt-16">
+    <!-- Hero -->
+    <section class="py-24 bg-[#241E1D]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-[#fcac00] font-medium tracking-wide uppercase text-sm mb-4">Managed Services</p>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+          Enterprise-Lösungen<br class="hidden sm:block" /> für den Mittelstand
+        </h1>
+        <p class="text-lg text-[#E5E7EB] max-w-2xl mx-auto">
+          Von Security über Backup bis Modern Workplace – wir liefern die Infrastruktur, 
+          die Ihr Business braucht.
+        </p>
+      </div>
+    </section>
+
+    <!-- Managed Security -->
+    <section class="py-24 bg-[#1a1615] border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span class="text-[#fcac00] font-medium text-sm uppercase tracking-wide">Security</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6">Schutzschild 2.0</h2>
+            <p class="text-[#E5E7EB] mb-6">
+              Cyberangriffe werden intelligenter. Unsere Abwehr auch. Mit Next-Gen Firewalls, 
+              KI-gestützter Endpoint Protection und Zero-Trust-Architekturen schützen wir Ihre 
+              Infrastruktur auf allen Ebenen.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#fcac00] mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-[#E5E7EB]"><strong class="text-white">Sophos XGS Firewalls</strong> – Deep Packet Inspection, TLS-Entschlüsselung, Synchronized Security</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#fcac00] mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-[#E5E7EB]"><strong class="text-white">SentinelOne</strong> – KI-basierte Endpoint Detection & Response (EDR)</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#fcac00] mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-[#E5E7EB]"><strong class="text-white">Zero Trust</strong> – Nie vertrauen, immer verifizieren. Mikrosegmentierung & Conditional Access.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-8">
+            <div class="text-6xl font-bold text-[#fcac00] mb-2">99.9%</div>
+            <div class="text-white font-medium mb-4">Threat Detection Rate</div>
+            <p class="text-[#E5E7EB] text-sm">
+              Durch die Kombination aus Sophos, SentinelOne und proaktivem Monitoring erreichen 
+              wir eine nahezu lückenlose Erkennung von Bedrohungen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Continuity -->
+    <section class="py-24 bg-[#241E1D] border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1 bg-white/5 border border-white/10 rounded-2xl p-8">
+            <div class="text-6xl font-bold text-[#fcac00] mb-2">&lt;15 Min</div>
+            <div class="text-white font-medium mb-4">Recovery Time Objective</div>
+            <p class="text-[#E5E7EB] text-sm">
+              Mit Veeam Cloud Connect und lokalem Instant Recovery können wir kritische 
+              Systeme in unter 15 Minuten wiederherstellen.
+            </p>
+          </div>
+          <div class="order-1 lg:order-2">
+            <span class="text-[#fcac00] font-medium text-sm uppercase tracking-wide">Backup & DR</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6">Business Continuity</h2>
+            <p class="text-[#E5E7EB] mb-6">
+              Datenverlust ist keine Option. Unsere Backup-Strategie kombiniert lokale Snapshots, 
+              Off-Site-Replikation und Cloud-Archivierung für maximale Ausfallsicherheit.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#fcac00] mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-[#E5E7EB]"><strong class="text-white">Veeam Backup & Replication</strong> – Image-Level Backup mit Application-Aware Processing</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#fcac00] mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-[#E5E7EB]"><strong class="text-white">Cloud Connect</strong> – Georedundante Replikation in deutsche Rechenzentren</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#fcac00] mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-[#E5E7EB]"><strong class="text-white">Regelmäßige DR-Tests</strong> – Dokumentierte Wiederherstellungstests nach Plan</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modern Workplace -->
+    <section class="py-24 bg-[#1a1615] border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span class="text-[#fcac00] font-medium text-sm uppercase tracking-wide">Collaboration</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6">Modern Workplace</h2>
+            <p class="text-[#E5E7EB] mb-6">
+              Produktives Arbeiten von überall – sicher und nahtlos. Wir implementieren und 
+              betreiben Ihre Collaboration-Plattform mit zentralem Identitätsmanagement.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#fcac00] mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-[#E5E7EB]"><strong class="text-white">Microsoft 365</strong> – Exchange, Teams, SharePoint, OneDrive – optimal konfiguriert</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#fcac00] mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-[#E5E7EB]"><strong class="text-white">Entra ID (Azure AD)</strong> – Single Sign-On, MFA, Conditional Access Policies</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#fcac00] mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-[#E5E7EB]"><strong class="text-white">Intune MDM</strong> – Gerätemanagement für Windows, macOS, iOS und Android</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-8">
+            <div class="grid grid-cols-2 gap-6">
+              <div>
+                <div class="text-4xl font-bold text-[#fcac00]">100%</div>
+                <div class="text-white/70 text-sm mt-1">Cloud-ready</div>
+              </div>
+              <div>
+                <div class="text-4xl font-bold text-[#fcac00]">MFA</div>
+                <div class="text-white/70 text-sm mt-1">Everywhere</div>
+              </div>
+              <div>
+                <div class="text-4xl font-bold text-[#fcac00]">SSO</div>
+                <div class="text-white/70 text-sm mt-1">für alle Apps</div>
+              </div>
+              <div>
+                <div class="text-4xl font-bold text-[#fcac00]">BYOD</div>
+                <div class="text-white/70 text-sm mt-1">sicher integriert</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Managed Print -->
+    <section class="py-24 bg-[#241E1D] border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1 bg-white/5 border border-white/10 rounded-2xl p-8">
+            <div class="text-[#fcac00] font-medium mb-4">Strategischer Partner</div>
+            <div class="text-4xl font-bold text-white mb-4">TOSHIBA</div>
+            <p class="text-[#E5E7EB] text-sm">
+              Als Toshiba-Partner bieten wir Ihnen Zugang zu professionellen MFP-Lösungen 
+              mit transparenter Kostenstruktur und proaktivem Service.
+            </p>
+          </div>
+          <div class="order-1 lg:order-2">
+            <span class="text-[#fcac00] font-medium text-sm uppercase tracking-wide">Print</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6">Managed Print Services</h2>
+            <p class="text-[#E5E7EB] mb-6">
+              Drucken muss nicht kompliziert sein. Wir optimieren Ihre Druckerlandschaft, 
+              senken Kosten und sorgen dafür, dass Toner und Service automatisch kommen.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#fcac00] mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-[#E5E7EB]"><strong class="text-white">Flottenanalyse</strong> – Bestandsaufnahme und Optimierungsvorschläge</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#fcac00] mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-[#E5E7EB]"><strong class="text-white">All-Inclusive-Verträge</strong> – Fixkosten pro Seite, keine Überraschungen</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-[#fcac00] mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="text-[#E5E7EB]"><strong class="text-white">Proaktiver Service</strong> – Automatische Tonerlieferung, Remote-Monitoring</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 bg-[#1a1615] border-t border-white/5">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+          Bereit für Enterprise-IT?
+        </h2>
+        <p class="text-[#E5E7EB] mb-8">
+          Lassen Sie uns gemeinsam analysieren, welche Services für Ihr Unternehmen den größten Mehrwert bieten.
+        </p>
+        <a href="/#kontakt" class="inline-flex items-center gap-2 bg-[#fcac00] hover:bg-[#fcac00]/90 text-[#241E1D] font-semibold px-8 py-4 rounded-xl text-lg transition-all glow-accent-hover">
+          Strategiegespräch vereinbaren
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-12 bg-[#241E1D]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <span class="text-xl font-bold tracking-tight">
+          <span class="text-white">exner</span><span class="text-[#fcac00]">it</span>
+        </span>
+        <div class="flex items-center gap-6 text-sm text-white/50">
+          <a href="/impressum" class="hover:text-white transition-colors">Impressum</a>
+          <a href="/datenschutz" class="hover:text-white transition-colors">Datenschutz</a>
+        </div>
+        <p class="text-sm text-white/30">© 2026 exnerit</p>
+      </div>
+    </div>
+  </footer>
+</Layout>
