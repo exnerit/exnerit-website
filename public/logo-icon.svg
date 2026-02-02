@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
+  <!-- X Icon with brackets and yellow dot -->
+  <!-- Left bracket -->
+  <path d="M5 10v40M5 10h8M5 50h8" stroke="#fcac00" stroke-width="3" stroke-linecap="round"/>
+  <!-- Right bracket -->
+  <path d="M55 10v40M55 10h-8M55 50h-8" stroke="#fcac00" stroke-width="3" stroke-linecap="round"/>
+  <!-- X -->
+  <path d="M18 15l12 15-12 15M42 15l-12 15 12 15" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Center dot -->
+  <circle cx="30" cy="30" r="5" fill="#fcac00"/>
+</svg>

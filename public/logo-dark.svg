@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
+  <!-- EXNER Logo dark version -->
+  <g fill="#1B1514">
+    <!-- E -->
+    <path d="M0 0h20v8H8v10h10v8H8v10h12v8H0V0z"/>
+    <!-- X with yellow center dot -->
+    <path d="M28 0h10l7 17 7-17h10l-12 22 12 22h-10l-7-17-7 17H28l12-22L28 0z"/>
+    <!-- Yellow dot in X center -->
+    <circle cx="45" cy="22" r="6" fill="#fcac00"/>
+    <circle cx="45" cy="22" r="4" fill="#fcac00"/>
+    <!-- N -->
+    <path d="M70 0h10l12 28V0h8v44h-10L78 16v28h-8V0z"/>
+    <!-- E -->
+    <path d="M106 0h20v8h-12v10h10v8h-10v10h12v8h-20V0z"/>
+    <!-- R -->
+    <path d="M132 0h18c6 0 10 4 10 12s-4 12-10 12h-2l12 20h-10l-10-18h-0v18h-8V0zm8 18h8c2 0 4-2 4-6s-2-6-4-6h-8v12z"/>
+  </g>
+</svg>
